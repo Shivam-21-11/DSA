@@ -6,7 +6,7 @@ class Node{
   }
 
 }
-class linkedList{
+class DoublelinkedList{
   constructor(val){
     this.head = new Node(val);
     this.tail = this.head;
