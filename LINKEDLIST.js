@@ -79,6 +79,15 @@ class linkedList{
     }
     this.length--;
   }
+  reverse(){
+    var arr = this.print();
+    var rev = arr.reverse();
+    var newList = new linkedList(rev[0]);
+    for(var i = 1;i<rev.length;i++){
+      newList.append(rev[i]);
+    }
+    return newList.print();
+  }
   
 
 }
