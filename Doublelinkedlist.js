@@ -67,6 +67,7 @@ class DoublelinkedList{
 
     }else if(pos === 0){
         this.head = this.head.next;
+      this.head.prev = null;
     }else{
       let i = 1 ;
       let bef = this.head;
